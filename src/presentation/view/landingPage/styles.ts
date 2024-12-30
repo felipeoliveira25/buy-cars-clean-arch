@@ -1,5 +1,11 @@
 'use client'
 import styled from "styled-components";
+import Image from "next/image";
+
+interface StyledTextProps {
+    color?: string;
+    fontSize?: string;
+}
 
 export const LandingContainer = styled.div`
     height: 100%;
@@ -17,11 +23,16 @@ export const MainContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 7rem;
+    
 `
 
-export const StyledText = styled.span`
+export const StyledText = styled.span<StyledTextProps>`
     color: ${({color}) => color};
-    font-size: 4rem;
+    
+    font-size: ${({fontSize}) => fontSize};
     font-weight: 900;
+`
+
+export const ImageExample = styled(Image)`
+    margin-top: 3rem;
 `
