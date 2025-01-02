@@ -2,12 +2,13 @@ import { ReactNode } from "react"
 import { ButtonInfoContainer, ButtonInfoText } from "./styles"
 
 interface ButtonInfoProp {
-    children: ReactNode
+    children: ReactNode;
+    marginTop?: string;
 }
 
-export const ButtonInfo = ({children} :ButtonInfoProp) => {
+export const ButtonInfo = ({children, marginTop} :ButtonInfoProp) => {
     return(
-        <ButtonInfoContainer>
+        <ButtonInfoContainer marginTop={marginTop}>
             <ButtonInfoText>
                 {children}
             </ButtonInfoText>

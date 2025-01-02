@@ -4,11 +4,12 @@ import { SubTitleContainer, SubTitleText } from "./styles"
 interface SubTitleProps {
     children: ReactNode;
     width?: string;
+    textAlign?: string;
 }
 
-export const SubTitle = ({children, width}: SubTitleProps) => {
+export const SubTitle = ({children, width, textAlign}: SubTitleProps) => {
     return(
-        <SubTitleContainer width={width}>
+        <SubTitleContainer width={width} textAlign={textAlign}>
             <SubTitleText>
                 {children}
             </SubTitleText>

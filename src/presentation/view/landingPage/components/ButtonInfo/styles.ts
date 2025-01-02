@@ -1,10 +1,15 @@
 import styled from "styled-components";
 
-export const ButtonInfoContainer = styled.div`
+interface ButtonInfoProps {
+    marginTop?: string;
+}
+
+export const ButtonInfoContainer = styled.div<ButtonInfoProps>`
     background-color: #D3D3D3;
     padding: 0.3rem 0.5rem;
     border-radius: 30px;
-    margin-top: 7rem;
+    margin-top: ${({marginTop}) => marginTop};
+    width: fit-content;
     
 `;
 

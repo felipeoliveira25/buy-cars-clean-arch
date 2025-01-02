@@ -1,11 +1,13 @@
+'use client'
 import styled from "styled-components";
 
 interface SubTitleProps {
     width?: string;
+    textAlign?: string;
 }
 
 export const SubTitleContainer = styled.div<SubTitleProps>`
-    text-align: center;
+    text-align: ${({textAlign}) => textAlign || "center"};
     width: ${({width}) => width};
     display: flex;
     justify-content: center;

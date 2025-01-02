@@ -1,9 +1,15 @@
+'use client'
 import styled from "styled-components";
 
-export const SecondaryTitleContainer = styled.div`
-    width: 25%;
+interface SecondaryTitleProps {
+    width?: string;
+    textAlign?: string;
+}
+
+export const SecondaryTitleContainer = styled.div<SecondaryTitleProps>`
+    width: ${({width}) => width || "25%"};
     display: flex;
-    text-align: center;
+    text-align: ${({textAlign}) => textAlign || "center"};
     margin-top: 1.5rem;
 `
 export const StyledWord = styled.h2`
