@@ -13,7 +13,6 @@ export const IconChat = styled(Image)`
 export const TestimonialsContainer = styled.div`
     display: flex;
     flex-direction: row;
-    margin-bottom: 3rem;
     width: 60%;
     margin-left: 18rem;
 `

@@ -7,7 +7,7 @@ interface SecondaryTitleProps {
 }
 
 export const SecondaryTitleContainer = styled.div<SecondaryTitleProps>`
-    width: ${({width}) => width || "25%"};
+    width: ${({width}) => width};
     display: flex;
     text-align: ${({textAlign}) => textAlign || "center"};
     margin-top: 1.5rem;

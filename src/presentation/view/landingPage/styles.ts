@@ -36,3 +36,19 @@ export const StyledText = styled.span<StyledTextProps>`
 export const ImageExample = styled(Image)`
     margin-top: 3rem;
 `
+
+export const SectionToggle = styled.label`
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    gap: 2rem;
+`
+
+export const ContainerPrices = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 40%;
+`
